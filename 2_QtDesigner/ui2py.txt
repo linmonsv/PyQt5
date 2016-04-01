@@ -1,0 +1,6 @@
+使用一条DOS命令来完成D:\Python33\Lib\site-packages\PyQt5\pyuic5.bat main.ui -o frist.py
+
+更实用的转换命令可以将当前文件夹下所有ui转换成py文件：
+for /f "delims=" %%i in ('dir /b /a-d /s *.ui') do D:\Python33\Lib\site-packages\PyQt5\pyuic5.bat %%i -o %%i.py
+
+PyQt支持用LoadUi方法直接加载ui文件，当然我们通过转换后可以方便学习PyQt窗体控件的源代码。
